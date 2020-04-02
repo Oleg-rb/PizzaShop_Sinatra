@@ -1,3 +1,4 @@
+<br />
 <div class="blockquote text-center">
 	<h2>Welcome to Pizza Shop!</h2>
 </div>
@@ -21,31 +22,25 @@
 			</div>
 			
 			<div>
-				Diametr: <%= p.size %> cm
+				Size: <%= p.size %> cm
 			</div>
 			
 			<div>
-				<%= p.is_spicy %>
+				Price: <%= p.price %> rub
 			</div>
-			
+			<br />
 			<div>
-				<%= p.is_veg %>
-			</div>
-			
-			<div>
-				<%= p.is_best_offer %>
-			</div>
-			
-			<div>
-				Price: <%= p.price %>
+				<button class="btn btn-sm btn-success">Add to card</button>
 			</div>
 			<br />
 			<br />
-		</div>
 
+		</div>
 		<% end %>
 		
 	</div>
 </div>
 
 <button class="btn btn-primary" onclick="something()">Click me</button>
+<br />
+<br />
