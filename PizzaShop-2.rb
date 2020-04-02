@@ -15,3 +15,7 @@ get '/' do
 	@products = Product.all
 	erb :index
 end
+
+get '/about' do
+		erb :about
+end
