@@ -1,3 +1,51 @@
-<h2>Welcome to Pizza Shop!</h2>
+<div class="blockquote text-center">
+	<h2>Welcome to Pizza Shop!</h2>
+</div>
+
+<div class="container">
+	<div class="row">
+
+		<% @products.each do |p| %>
+		<div class="col-md-4">
+
+			<div class="blockquote text-center">
+				<h3><%= p.title %></h3>
+			</div>
+
+			<picture>
+			  <img src="<%= p.path_to_image %>" class="img-fluid img-thumbnail" alt="...">
+			</picture>
+
+			<div>
+				<%= p.description %>
+			</div>
+			
+			<div>
+				Diametr: <%= p.size %> cm
+			</div>
+			
+			<div>
+				<%= p.is_spicy %>
+			</div>
+			
+			<div>
+				<%= p.is_veg %>
+			</div>
+			
+			<div>
+				<%= p.is_best_offer %>
+			</div>
+			
+			<div>
+				Price: <%= p.price %>
+			</div>
+			<br />
+			<br />
+		</div>
+
+		<% end %>
+		
+	</div>
+</div>
 
 <button class="btn btn-primary" onclick="something()">Click me</button>
