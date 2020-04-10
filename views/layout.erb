@@ -39,7 +39,7 @@
 				<ul class="nav justify-content-end">
 					<li>
 						<form action="/cart" method="POST">
-						<input id="orders_input" type="hidden" name="orders" />
+						<input id="orders_input" type="hidden" name="orders_input" />
 						<input id="orders_button" type="submit" class="btn btn-success badge-pill text-white btn-lg" value="Cart (...)" />
 						</form>
 					</li>
@@ -56,14 +56,11 @@
 		</div>
 
 		<script type="text/javascript">
-
-		$(function() {
-
-			update_orders_input();
-			update_orders_button();
-
-		});
-
+			$(function() {
+				update_orders_input();
+				update_orders_button();
+			});
 		</script>
+
     </body>
 </html>
