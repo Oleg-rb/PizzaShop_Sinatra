@@ -1,4 +1,11 @@
 #orders_button
 {
-	background-color: yellow;
+	background-color: #DAE0E5;
+	border: none;
+	font-size: 25px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-left: 10px;
+	text-decoration: underline;
 }
