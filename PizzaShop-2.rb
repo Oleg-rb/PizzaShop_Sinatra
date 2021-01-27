@@ -5,7 +5,7 @@ require 'sinatra/reloader'
 require 'sqlite3'
 require 'sinatra/activerecord'
 
-set :database, "sqlite3:pizzashop-2.db"
+set :database, {adapter: "sqlite3", database: "pizzashop-2.db"}
 
 class Product < ActiveRecord::Base
 end
